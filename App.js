@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Dimensions,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -10,36 +11,21 @@ import {
   Button,
   Platform,
   StatusBar,
+  useWindowDimensions,
 } from "react-native";
 
 export default function App() {
+  console.log(useWindowDimensions());
+  const { width, height } = useWindowDimensions();
   return (
     <SafeAreaView style={styles.container}>
-      <Text numberOfLines={1}>Hello World!</Text>
-      <TouchableOpacity onPress={() => console.log("image tapped")}>
-        <Image
-          blurRadius={7}
-          style={styles.stretch}
-          source={require("./assets/adaptive-icon.png")}
-        />
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={() => console.log("image tapped")}
-        style={{ backgroundColor: "orange" }}
-      >
-        <Button
-          title="Click Me"
-          onPress={() =>
-            // Alert.alert("My Title", "My Message", [
-            //   { text: "Yes", onPress: () => console.log("Yes") },
-            //   { text: "No", onPress: () => console.log("No") },
-            // ])
-            Alert.prompt("My Title", "My Message", (text) => console.log(text))
-          }
-        />
-      </TouchableOpacity>
-
-      <StatusBar style="auto" />
+      <View
+        style={{
+          backgroundColor: "dodgerblue",
+          width: "100%",
+          height: width > height ? "100%" : "30%",
+        }}
+      ></View>
     </SafeAreaView>
   );
 }
@@ -48,8 +34,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "white",
-    alignItems: "center",
-    justifyContent: "center",
+    // alignItems: "center",
+    // justifyContent: "center",
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
   stretch: {
