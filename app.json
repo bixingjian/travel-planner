@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "TravelPlanner",
-    "slug": "TravelPlanner",
+    "name": "Travel Planner",
+    "slug": "travel-planner",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
