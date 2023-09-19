@@ -2,6 +2,7 @@ import React from "react";
 import { Image, StyleSheet, View } from "react-native";
 
 import colors from "../config/colors";
+import AppText from "../components/AppText";
 
 function ViewImageScreen(props) {
   return (
