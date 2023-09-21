@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Image, StyleSheet } from "react-native";
 import AppText from "../components/AppText";
+import { Button, ThemeProvider } from "@rneui/base";
 
 import ListItem from "../components/ListItem";
 import colors from "../config/colors";
@@ -19,6 +20,7 @@ function ListingDetailsScreen(props) {
             subTitle="5 Listings"
           />
         </View>
+        <Button title="chat" />
       </View>
     </View>
   );
