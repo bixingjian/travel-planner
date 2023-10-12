@@ -12,3 +12,5 @@
   - alignContent: when you have wrapping, align all of the content (multiple lines)
   - flixBasis(size along the primary axis), flexGrow(the same with flex, grow to fill the avail space), flexShrink(not often, opposite of flexGrow, the same with set flex to -1)
   - position: "relative" (by default)
+
+- expo gesture handler
