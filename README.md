@@ -1,7 +1,9 @@
+- run the code
+  npm start
 - publish to expo
   `eas update`
-
 - layout
+
   - main axis, cross axis. (based on the flex direction)
   - justifyContent: along main axis. (default col)
   - alignItems: along seconday axis. each line

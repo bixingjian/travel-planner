@@ -16,7 +16,7 @@ function ListingDetailsScreen(props) {
         <View style={styles.userContainer}>
           <ListItem
             image={require("../assets/max.jpg")}
-            title="Max Bi"
+            title="Max BI"
             subTitle="5 Listings"
           />
         </View>
