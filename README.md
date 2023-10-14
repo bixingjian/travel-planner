@@ -14,3 +14,4 @@
   - position: "relative" (by default)
 
 - expo gesture handler
+- vscode code snippets

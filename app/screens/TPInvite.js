@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FlatList, SafeAreaView, StyleSheet, View } from "react-native";
-import AppText from "../components/AppText";
+import Text from "../components/Text";
 import ListItem from "../components/lists/ListItem";
 import Screen from "../components/Screen";
 import ListItemSeparator from "../components/lists/ListItemSeparator";
