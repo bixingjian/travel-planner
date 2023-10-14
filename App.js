@@ -24,5 +24,5 @@ const categories = [
 ];
 
 export default function App() {
-  return <ListingEditScreen />;
+  return <TPInvite />;
 }
